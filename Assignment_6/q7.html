@@ -13,15 +13,22 @@
     let num = prompt('Please enter a number: ');
     let i=0;
     let j=1;
-    const array =[0,1];
-    function fib(array,i,j) {
+    let k=2;
+    const array =[];
+    array[0]=0;
+    array[1]=1;
+    function fib(array,i,j,k) {
         
-        array[j+1]=array[j]+array[i];
-        if(j+1<num) {
-            fib(array,j,j+1);
+        array[k]=array[i]+array[j];
+        k=k+1  ;
+        j=j+1 ;
+        i=i+1 ;
+        if(k<num) {
+            fib(array,i,j,k);
         }
         
     }
+    fib(array,0,1,2);
     alert(array);
     
 </script>
