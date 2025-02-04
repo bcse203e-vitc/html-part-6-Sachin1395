@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    let num = prompt('Enter a number :' );
+    let x,y;
+    let o=num;
+    y=0;
+    while ( num>0){
+        x=num%10;
+        y=(y*10);
+        y=y+x;
+        num=Math.floor(num/10);
+    }
+    if(y==o){
+        alert('NUMBER AFTER REVERSING IS THE SAME ORIGINAL NUMBER :'+y);}
+    else{
+        alert('NUMBER  AFTER REVERSING :'+y);
+
+    }
+
+
+</script>
+</html>

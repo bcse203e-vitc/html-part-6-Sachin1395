@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Before changing</p>
+    <p>var1 = </p><p id="var1"></p><br>
+    <p>var2 = </p><p id="var2"></p>
+    <hr>
+    <p>After changing</p>
+    <p>var1 = </p><p id="var_1"></p><br>
+    <p>var2 = </p><p id="var_2"></p>
+    <hr>
+
+</body>
+
+<script>
+    let var1,var2,var3;;
+    var1=5;
+    var2=10
+    document.getElementById("var1").innerHTML=var1;
+    document.getElementById("var2").innerHTML=var2;
+    var1=var1+var2;
+    var2=var1-var2;
+    var1=var1-var2;
+    document.getElementById("var_1").innerHTML=var1;
+    document.getElementById("var_2").innerHTML=var2;
+    
+
+</script>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let num = prompt('Please enter a number: ');
+    let i=0;
+    let j=1;
+    const array =[0,1];
+    function fib(array,i,j) {
+        
+        array[j+1]=array[j]+array[i];
+        if(j+1<num) {
+            fib(array,j,j+1);
+        }
+        
+    }
+    alert(array);
+    
+</script>
+</html>

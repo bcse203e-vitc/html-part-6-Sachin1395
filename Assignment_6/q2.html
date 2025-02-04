@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="largest_no()">Calculate largest</button>
+</body>
+
+<script>
+    let in_1 = prompt("Enter no 1 : ");
+    let in_2 = prompt("Enter no 2 : ");
+    let in_3 = prompt("Enter no 3 : ");
+
+    function largest_no() {
+        let largest = Math.max(in_1, in_2, in_3);
+        alert("The largest number is: " + largest);
+    }
+</script>
+</html>
